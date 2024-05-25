@@ -1,0 +1,32 @@
+1.Pehle hum model naam ka folder banaye gai :
+     a) frr connect.js --- uska code likhe gai
+     b) frr users.js  ---- Schema banaye gai 
+
+2. frr hum sab ko install kre gai ek sath hi sab ko kr le gai :(CODE FOR INSTALL):-
+    npm i passport passport-local passport-local-mongoose express-session mongoose
+
+3. frr passport-part1 k img k according:
+  a) users.js ka file dekhe gai
+  b) frr app.js mai (view setup engine k upr yh code dalna h:-):-
+       
+    const passport = require('passport');
+    const expressSession = require('express-session');
+    const userModel = require('./models/users');
+    
+4. frr passport-part1 k img k according:
+   a) aap.js ka file dekhe gai 
+   b) frr aap.js mai view setup k niche or "logger" k upr  sara code dalna hai
+
+5. frr index.js mai jana hai :-
+  a)require krna hai passport or userModel ko
+      const passport = require('passport');
+      const userModel = require('../models/users');
+
+6. frr passport-part2 k img k according(index.js):
+  a)(Registering user) upr mai passport-local ko     require krna hai
+      const LocalStrategy = require('passport-local');
+      passport.use(new LocalStrategy(userModel.authenticate()));
+
+  b)route vala dalna hai
+
+7)frr index.ejs mai form bana k register route bana hai
