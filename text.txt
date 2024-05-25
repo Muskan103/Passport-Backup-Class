@@ -9,7 +9,7 @@
   a) users.js ka file dekhe gai
   b) frr app.js mai (view setup engine k upr yh code dalna h:-):-
      const db = require('./models/connect')----upr mai db coonect krna hai
-   frr....
+   frr.....
     const passport = require('passport');
     const expressSession = require('express-session');
     const userModel = require('./models/users');
