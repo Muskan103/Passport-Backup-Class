@@ -8,7 +8,8 @@
 3. frr passport-part1 k img k according:
   a) users.js ka file dekhe gai
   b) frr app.js mai (view setup engine k upr yh code dalna h:-):-
-       
+     const db = require('./models/connect')----upr mai db coonect krna hai
+   frr....
     const passport = require('passport');
     const expressSession = require('express-session');
     const userModel = require('./models/users');
